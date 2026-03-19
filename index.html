@@ -45,32 +45,41 @@ canvas{
 position:absolute;
 top:0;
 left:0;
-z-index:-1;
+z-index:0;
 }
 
-/* TEXTO */
+/* TEXTO MEJORADO */
 #texto{
 position:absolute;
-top:45%;
-width:100%;
+top:35%;
+left:50%;
+transform:translateX(-50%);
+width:80%;
 text-align:center;
-font-size:24px;
+font-size:22px;
 opacity:0;
 transition:2s;
-padding:20px;
+padding:15px;
+z-index:2;
+
+/* efecto elegante */
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(6px);
+border-radius:20px;
 }
 
 /* FOTO */
 #foto{
 position:absolute;
-top:50%;
+top:65%;
 left:50%;
 transform:translate(-50%,-50%) scale(.8);
-width:260px;
+width:240px;
 border-radius:20px;
 box-shadow:0 0 80px rgba(255,255,255,.6);
 opacity:0;
 transition:3s;
+z-index:1;
 }
 
 /* FINAL */
@@ -79,10 +88,12 @@ position:absolute;
 top:50%;
 width:100%;
 text-align:center;
-font-size:32px;
+font-size:30px;
 opacity:0;
 text-shadow:0 0 40px white;
 transition:3s;
+z-index:3;
+padding:20px;
 }
 
 iframe{
